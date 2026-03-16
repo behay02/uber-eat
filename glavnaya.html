@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber Eats - Рестораны</title>
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Шапка с position fixed -->
+  <header class="header">
+    <div class="container">
+      <div class="row middle-xs between-xs">
+        <div class="col-xs-6">
+          <a href="/" class="logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+              <rect width="120" height="40" fill="#000000"/>
+              <text x="20" y="25" fill="white" font-family="Arial" font-size="18" font-weight="bold">UBER EATS</text>
+            </svg>
+          </a>
+        </div>
+        <div class="col-xs-6 end-xs">
+          <button class="cart-button">
+            <span class="cart-count">5</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Заголовок страницы -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="page-title">Рестораны</h1>
+        </div>
+      </div>
+
+      <!-- Строка поиска -->
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="search-wrapper">
+            <input type="text" class="search-input" placeholder="Поиск блюд и ресторанов">
+            <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#626262"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Сетка ресторанов -->
+      <div class="row">
+        <!-- Карточка ресторана 1 (Пушкин) - ссылка на страницу ресторана -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="restaurant.html" class="restaurant-card">
+            <div class="restaurant-image">
+              <div class="image-placeholder" style="background-color: #4A6FA5;">
+                <span class="placeholder-text">Пушкин</span>
+              </div>
+              <span class="restaurant-price">₽₽₽</span>
+            </div>
+            <div class="restaurant-info">
+              <h3 class="restaurant-name">Пушкин</h3>
+              <p class="restaurant-cuisine">Русская • Европейская</p>
+              <div class="restaurant-meta">
+                <span class="restaurant-rating">4.5</span>
+                <span class="restaurant-time">25-35 мин</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Карточка ресторана 2 -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="restaurant.html" class="restaurant-card">
+            <div class="restaurant-image">
+              <div class="image-placeholder" style="background-color: #D96C6C;">
+                <span class="placeholder-text">Якитория</span>
+              </div>
+              <span class="restaurant-price">₽₽</span>
+            </div>
+            <div class="restaurant-info">
+              <h3 class="restaurant-name">Якитория</h3>
+              <p class="restaurant-cuisine">Японская • Азиатская</p>
+              <div class="restaurant-meta">
+                <span class="restaurant-rating">4.2</span>
+                <span class="restaurant-time">35-45 мин</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Карточка ресторана 3 -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="restaurant.html" class="restaurant-card">
+            <div class="restaurant-image">
+              <div class="image-placeholder" style="background-color: #6C8C6C;">
+                <span class="placeholder-text">Тануки</span>
+              </div>
+              <span class="restaurant-price">₽₽</span>
+            </div>
+            <div class="restaurant-info">
+              <h3 class="restaurant-name">Тануки</h3>
+              <p class="restaurant-cuisine">Японская</p>
+              <div class="restaurant-meta">
+                <span class="restaurant-rating">4.4</span>
+                <span class="restaurant-time">30-40 мин</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Карточка ресторана 4 -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="restaurant.html" class="restaurant-card">
+            <div class="restaurant-image">
+              <div class="image-placeholder" style="background-color: #C4A27A;">
+                <span class="placeholder-text">Food Band</span>
+              </div>
+              <span class="restaurant-price">₽</span>
+            </div>
+            <div class="restaurant-info">
+              <h3 class="restaurant-name">Food Band</h3>
+              <p class="restaurant-cuisine">Европейская • Американская</p>
+              <div class="restaurant-meta">
+                <span class="restaurant-rating">4.1</span>
+                <span class="restaurant-time">15-25 мин</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Карточка ресторана 5 -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="restaurant.html" class="restaurant-card">
+            <div class="restaurant-image">
+              <div class="image-placeholder" style="background-color: #A56B6B;">
+                <span class="placeholder-text">IL Патио</span>
+              </div>
+              <span class="restaurant-price">₽₽</span>
+            </div>
+            <div class="restaurant-info">
+              <h3 class="restaurant-name">IL Патио</h3>
+              <p class="restaurant-cuisine">Итальянская</p>
+              <div class="restaurant-meta">
+                <span class="restaurant-rating">4.3</span>
+                <span class="restaurant-time">20-30 мин</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Карточка ресторана 6 -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="restaurant.html" class="restaurant-card">
+            <div class="restaurant-image">
+              <div class="image-placeholder" style="background-color: #D4A373;">
+                <span class="placeholder-text">Пицца Хат</span>
+              </div>
+              <span class="restaurant-price">₽</span>
+            </div>
+            <div class="restaurant-info">
+              <h3 class="restaurant-name">Пицца Хат</h3>
+              <p class="restaurant-cuisine">Пицца • Американская</p>
+              <div class="restaurant-meta">
+                <span class="restaurant-rating">4.0</span>
+                <span class="restaurant-time">15-25 мин</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Карточка ресторана 7 -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="restaurant.html" class="restaurant-card">
+            <div class="restaurant-image">
+              <div class="image-placeholder" style="background-color: #8B5A2B;">
+                <span class="placeholder-text">Мясо&Рыба</span>
+              </div>
+              <span class="restaurant-price">₽₽₽</span>
+            </div>
+            <div class="restaurant-info">
+              <h3 class="restaurant-name">Мясо&Рыба</h3>
+              <p class="restaurant-cuisine">Русская • Европейская</p>
+              <div class="restaurant-meta">
+                <span class="restaurant-rating">4.7</span>
+                <span class="restaurant-time">30-40 мин</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Карточка ресторана 8 -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="restaurant.html" class="restaurant-card">
+            <div class="restaurant-image">
+              <div class="image-placeholder" style="background-color: #7B4B3A;">
+                <span class="placeholder-text">Шоколадница</span>
+              </div>
+              <span class="restaurant-price">₽₽</span>
+            </div>
+            <div class="restaurant-info">
+              <h3 class="restaurant-name">Шоколадница</h3>
+              <p class="restaurant-cuisine">Десерты • Кофейня</p>
+              <div class="restaurant-meta">
+                <span class="restaurant-rating">4.3</span>
+                <span class="restaurant-time">20-30 мин</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="footer-logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+              <rect width="120" height="40" fill="white"/>
+              <text x="20" y="25" fill="black" font-family="Arial" font-size="18" font-weight="bold">UBER EATS</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <ul class="footer-menu">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Карьера</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <ul class="footer-menu">
+            <li><a href="#">Стать партнёром</a></li>
+            <li><a href="#">Для ресторанов</a></li>
+            <li><a href="#">Для курьеров</a></li>
+            <li><a href="#">Для инвесторов</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <ul class="footer-menu">
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Правила программы лояльности</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="app-buttons">
+            <a href="#" class="app-button">
+              <div class="app-placeholder" style="background-color: #333; width: 120px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white;">App Store</div>
+            </a>
+            <a href="#" class="app-button">
+              <div class="app-placeholder" style="background-color: #333; width: 120px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white;">Google Play</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="copyright">© 2023 Uber Technologies Inc.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
